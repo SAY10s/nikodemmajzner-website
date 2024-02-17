@@ -3,7 +3,7 @@ import classes from "./Navbar.module.scss";
 export default function Navbar() {
   return (
     <nav className={classes.navbar}>
-      <section>
+      <section className={classes.navLogo}>
         <div>Nikodem</div>
         <div>Majzner</div>
       </section>
