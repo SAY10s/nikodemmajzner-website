@@ -1,3 +1,4 @@
+import Button from "./Button";
 import classes from "./Navbar.module.scss";
 
 export default function Navbar() {
@@ -8,9 +9,9 @@ export default function Navbar() {
         <div>Majzner</div>
       </section>
       <div>
-        <button>o mnie</button>
-        <button>kontakt</button>
-        <button>github</button>
+        <Button>o mnie</Button>
+        <Button>kontakt</Button>
+        <Button>github</Button>
       </div>
     </nav>
   );
