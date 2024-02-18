@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import classes from "./Homepage.module.scss";
 
 export default function Homepage() {
@@ -8,7 +9,9 @@ export default function Homepage() {
       </div>
       <div className={classes.bottom}>
         <div className={classes.webdeveloper}>web developer</div>
-        <button className={classes.kontakt}>skontaktuj się</button>
+        <Link to={"kontakt"}>
+          <button className={classes.kontakt}>skontaktuj się</button>
+        </Link>
       </div>
     </div>
   );
