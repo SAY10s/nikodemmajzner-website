@@ -11,7 +11,13 @@ html {
 body {
   background-color: #ffe8be;
 
-  min-height: 200vh;
+  // TEMP
+  background-image: url("../public/background.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+  // TEMP
 
   &,
   button,
