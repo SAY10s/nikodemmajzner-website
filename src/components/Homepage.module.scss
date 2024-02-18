@@ -1,0 +1,44 @@
+.container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 4rem;
+  .nikodemmajzner {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 6vw;
+    font-weight: 600;
+    line-height: calc(5vw);
+  }
+  .top,
+  .bottom {
+    width: 100%;
+    height: 50%;
+  }
+  .top {
+    display: flex;
+    align-items: flex-end;
+  }
+  .webdeveloper {
+    font-size: 4vw;
+    font-weight: 300;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .kontakt {
+    position: absolute;
+    left: 4rem;
+    bottom: 2rem;
+    background-color: #0f0201;
+    color: #ffe8be;
+    padding: 1.5rem 4rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    border: none;
+    cursor: pointer;
+  }
+}
