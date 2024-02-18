@@ -11,14 +11,6 @@ html {
 body {
   background-color: #ffe8be;
 
-  // TEMP
-  background-image: url("../public/background.png");
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  height: 100vh;
-  // TEMP
-
   &,
   button,
   input {
@@ -26,14 +18,13 @@ body {
     font-family: "League Spartan", sans-serif;
   }
 }
-
-// Night dev :) //włączam, kiedy koduję w nocy; NIE WYGLĄDA DOBRZE, ALE NIE KŁUJE W OCZY!
-body {
-  background-color: #252020;
-  background-image: unset;
-}
-
 a {
   color: unset;
   text-decoration: unset;
 }
+
+// Night dev :) //włączam, kiedy koduję w nocy; NIE WYGLĄDA DOBRZE, ALE NIE KŁUJE W OCZY!
+// body {
+//   background-color: #252020;
+//   background-image: unset;
+// }
