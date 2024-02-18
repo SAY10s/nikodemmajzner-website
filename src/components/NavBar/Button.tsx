@@ -1,14 +1,19 @@
 import { ReactNode } from "react";
+import { Link } from "react-router-dom";
 
 interface Props {
+  link: string;
   children: ReactNode;
+  newPage?: boolean;
 }
 
-const Button = ({ children }: Props) => {
+const Button = ({ link, newPage = false, children }: Props) => {
   return (
-    <button>
-      <span>{children}</span>
-    </button>
+    <Link to={link} target={newPage ? "_blank" : ""}>
+      <button>
+        <span>{children}</span>
+      </button>
+    </Link>
   );
 };
 
