@@ -11,10 +11,15 @@ html {
 body {
   background-color: #ffe8be;
 
+  min-height: 200vh;
+
   &,
   button,
   input {
     color: #0f0201;
     font-family: "League Spartan", sans-serif;
+  }
+  main {
+    padding-top: 100vh;
   }
 }
