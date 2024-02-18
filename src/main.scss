@@ -25,7 +25,10 @@ body {
     color: #0f0201;
     font-family: "League Spartan", sans-serif;
   }
-  main {
-    padding-top: 100vh;
-  }
+}
+
+// Night dev :) //włączam, kiedy koduję w nocy; NIE WYGLĄDA DOBRZE, ALE NIE KŁUJE W OCZY!
+body {
+  background-color: #252020;
+  background-image: unset;
 }

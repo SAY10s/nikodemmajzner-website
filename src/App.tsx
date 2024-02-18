@@ -1,19 +1,24 @@
-import Navbar from "./components/NavBar/Navbar";
-import classes from "./App.module.scss";
 import Homepage from "./components/Homepage";
+import RouteError from "./components/Pages/RouteError";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "../public/background.png";
+import Button from "./components/NavBar/Button";
+import Root from "./components/Pages/Root";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <RouteError />,
+    children: [
+      { path: "/", element: <Homepage /> },
+      { path: "test", element: <Button>XD</Button> },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <>
-      <div className={classes.container}>
-        <Navbar />
-        <main>
-          <Homepage />
-        </main>
-      </div>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
