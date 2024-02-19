@@ -1,5 +1,9 @@
 .modal {
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   height: 100vh;
   width: 100vw;
 
@@ -7,5 +11,13 @@
   padding: 0;
   h1 {
     background-color: aqua;
+  }
+
+  background-color: #ffe8be;
+  border: none;
+
+  .navLogo {
+    font: 400 1.6rem/1.3rem "Roboto Mono", monospace;
+    text-transform: uppercase;
   }
 }
