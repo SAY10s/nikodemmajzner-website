@@ -1,6 +1,6 @@
 import Navbar from "../NavBar/Navbar";
 import classes from "./RouteError.module.scss";
-import react from "../../../public/react.svg";
+import react from "../../assets/react.svg";
 import { Link } from "react-router-dom";
 
 export default function RouteError() {

@@ -1,7 +1,6 @@
 import Homepage from "./components/Homepage";
 import RouteError from "./components/Pages/RouteError";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import "../public/background.png";
 import Root from "./components/Pages/Root";
 
 const router = createBrowserRouter([
