@@ -11,15 +11,18 @@ interface Props {
 export default function Root({ children }: Props) {
   const navRef = useRef<HTMLDialogElement>(null);
 
-  const handleModalChange = () => {
+  const handleModalOpen = () => {
     navRef.current?.showModal();
+  };
+  const handleModalClose = () => {
+    navRef.current?.close();
   };
 
   return (
     <>
-      <NavbarModal ref={navRef} />
+      <NavbarModal ref={navRef} handleModalClose={handleModalClose} />
       <div className={classes.mainContainer}>
-        <Navbar handleModalOpen={handleModalChange} />
+        <Navbar handleModalOpen={handleModalOpen} />
         {children}
         <Outlet />
       </div>
