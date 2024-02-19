@@ -1,3 +1,5 @@
+@import "../../values";
+
 .navbar {
   position: fixed;
   top: 0;
@@ -6,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffe8be;
+  background-color: $primaryLight;
 
   z-index: 100;
 
@@ -15,6 +17,12 @@
   padding: 3rem 3rem;
 
   // border-bottom: 3px solid #0f0201;
+
+  .btnWrapper {
+    @media only screen and (max-width: 600px) {
+      background-color: lightblue;
+    }
+  }
 
   .navLogo {
     font: 400 1.6rem/1.3rem "Roboto Mono", monospace;

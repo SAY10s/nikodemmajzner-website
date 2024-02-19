@@ -1,0 +1,16 @@
+// variables
+$mobileScreen: 600px;
+$primaryLight: #ffe8be;
+$primaryDark: #0f0201;
+
+// mixins
+@mixin mobile {
+  @media screen and (max-width: $mobileScreen) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: $mobileScreen) {
+    @content;
+  }
+}

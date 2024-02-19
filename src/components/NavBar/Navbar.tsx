@@ -15,14 +15,14 @@ export default function Navbar({ handleModalOpen }: Props) {
           <div>Majzner</div>
         </section>
       </Link>
-      <div>
+      <section className={classes.btnWrapper}>
         <Button link="omnie">o mnie</Button>
         <Button link="kontakt">kontakt</Button>
         <Button link="https://github.com/SAY10s" newPage={true}>
           github
         </Button>
         <button onClick={handleModalOpen}>X</button>
-      </div>
+      </section>
     </nav>
   );
 }

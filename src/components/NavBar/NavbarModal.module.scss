@@ -1,3 +1,4 @@
+@import "../../values";
 .modal {
   display: flex;
   flex-direction: column;
@@ -13,7 +14,7 @@
     background-color: aqua;
   }
 
-  background-color: #ffe8be;
+  background-color: $primaryLight;
   border: none;
 
   .navLogo {
