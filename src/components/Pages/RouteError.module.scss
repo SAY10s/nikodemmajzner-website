@@ -5,14 +5,19 @@
   justify-content: center;
 
   padding: 1rem;
-  padding-top: calc(96px + 5rem);
+  padding-top: calc(96px);
   text-align: center;
+  min-height: 100vh;
+
+  .container2 {
+    height: 100%;
+  }
 
   h1 {
     font-size: 4rem;
   }
   h2 {
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
   }
   img {
     width: 200px;
