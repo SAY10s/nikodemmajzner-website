@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../NavBar/Navbar";
 import classes from "./RouteError.module.scss";
 import { ReactNode, useRef } from "react";
+import NavbarModal from "../NavBar/NavbarModal";
 
 interface Props {
   children?: ReactNode;
@@ -10,17 +11,15 @@ interface Props {
 export default function Root({ children }: Props) {
   const navRef = useRef<HTMLDialogElement>(null);
 
-  const handleModalOpen = () => {
+  const handleModalChange = () => {
     navRef.current?.showModal();
   };
 
   return (
     <>
       <div className={classes.mainContainer}>
-        <dialog ref={navRef}>
-          <h1>SILI!</h1>
-        </dialog>
-        <Navbar handleModalOpen={handleModalOpen} />
+        <NavbarModal ref={navRef} />
+        <Navbar handleModalOpen={handleModalChange} />
         {children}
         <Outlet />
       </div>
