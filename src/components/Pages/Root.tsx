@@ -17,8 +17,8 @@ export default function Root({ children }: Props) {
 
   return (
     <>
+      <NavbarModal ref={navRef} />
       <div className={classes.mainContainer}>
-        <NavbarModal ref={navRef} />
         <Navbar handleModalOpen={handleModalChange} />
         {children}
         <Outlet />
