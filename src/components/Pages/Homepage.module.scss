@@ -31,10 +31,10 @@
       line-height: unset;
     }
   }
-  @include mobile {
-    .top {
-      display: flex;
-      align-items: end;
+  .top {
+    display: flex;
+    align-items: end;
+    @include mobile {
       height: 52.5%;
     }
   }
@@ -44,14 +44,11 @@
       width: 100%;
       height: 50%;
     }
-    .top {
-      display: flex;
-      align-items: end;
-    }
     .bottom {
       display: flex;
     }
   }
+
   .webdeveloper {
     font-size: 4vw;
     @include mobile {

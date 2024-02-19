@@ -31,11 +31,9 @@
     animation: rotate 15s linear infinite;
   }
 
-  .kontakt {
+  .back {
     @include primaryButton;
-
     margin-top: 0.5rem;
-
     &:hover {
       margin-top: 0rem;
     }

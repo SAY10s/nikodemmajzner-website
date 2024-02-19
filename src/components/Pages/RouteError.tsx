@@ -13,7 +13,7 @@ export default function RouteError() {
         <img src={react} className={classes.react} alt="" />
         <h2>Strona, której szukasz jeszcze nie jest gotowa... </h2>
         <Link to={""}>
-          <button className={classes.kontakt}>powrót</button>
+          <button className={classes.back}>powrót</button>
         </Link>
       </div>
     </Root>
