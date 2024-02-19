@@ -19,5 +19,39 @@
   .navLogo {
     font: 400 1.6rem/1.3rem "Roboto Mono", monospace;
     text-transform: uppercase;
+    padding: 2rem;
+  }
+  .btnWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 300;
+    cursor: pointer;
+
+    border: none;
+    background-color: unset;
+
+    span {
+      position: relative;
+      cursor: pointer;
+    }
+    span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 2px;
+      background-color: #0f0201;
+      transition: width 0.15s ease-in-out;
+      opacity: 40%;
+    }
+    &:hover span::after {
+      width: 100%;
+      opacity: 100%;
+    }
   }
 }
