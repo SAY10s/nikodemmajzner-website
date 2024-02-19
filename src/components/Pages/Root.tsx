@@ -1,9 +1,13 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../NavBar/Navbar";
-import classes from "./Root.module.scss";
-import { useRef } from "react";
+import classes from "./RouteError.module.scss";
+import { ReactNode, useRef } from "react";
 
-export default function Root() {
+interface Props {
+  children?: ReactNode;
+}
+
+export default function Root({ children }: Props) {
   const navRef = useRef<HTMLDialogElement>(null);
 
   const handleModalOpen = () => {
@@ -12,11 +16,12 @@ export default function Root() {
 
   return (
     <>
-      <div className={classes.container}>
+      <div className={classes.mainContainer}>
         <dialog ref={navRef}>
           <h1>SILI!</h1>
         </dialog>
         <Navbar handleModalOpen={handleModalOpen} />
+        {children}
         <Outlet />
       </div>
     </>
