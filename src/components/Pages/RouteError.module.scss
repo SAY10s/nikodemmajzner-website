@@ -1,4 +1,6 @@
-@import "../../values";
+@import "../../scss/values";
+@import "../../scss/primaryButton";
+
 .mainContainer {
   display: flex;
   flex-direction: column;
@@ -30,26 +32,12 @@
   }
 
   .kontakt {
-    background-color: $primaryDark;
-    color: $primaryLight;
-    padding: 1.5rem 4rem;
-    border-radius: 1rem;
-    font-size: 1.8rem;
-    border: none;
-    cursor: pointer;
+    @include primaryButton;
 
-    box-shadow: 0 0.5rem 1rem rgba(15, 2, 1, 0.45);
     margin-top: 0.5rem;
-    margin-bottom: 0rem;
-    transition: 0.3s;
-    text-shadow: none;
 
     &:hover {
-      box-shadow: 0 1rem 1.5rem rgba(15, 2, 1, 0.3);
       margin-top: 0rem;
-      margin-bottom: 0.5rem;
-      color: $primaryLight;
-      text-shadow: 0rem 0rem 1rem rgba(255, 232, 190, 0.75);
     }
   }
 }
