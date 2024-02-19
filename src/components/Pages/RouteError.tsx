@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function RouteError() {
   return (
     <div className={classes.container}>
-      <Navbar />
+      <Navbar handleModalOpen={() => {}} />
       <div className={classes.container2}>
         <h1>
           Strona w <span>przygotowaniu!</span>
