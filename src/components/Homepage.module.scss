@@ -3,7 +3,6 @@
   position: absolute;
   display: flex;
   align-items: center;
-  // justify-content: center;
   flex-direction: column;
   top: 0;
   left: 0;
@@ -45,7 +44,7 @@
     }
     .top {
       display: flex;
-      align-items: flex-end;
+      align-items: end;
     }
     .bottom {
       display: flex;
