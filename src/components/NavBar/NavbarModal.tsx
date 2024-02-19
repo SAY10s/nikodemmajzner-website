@@ -1,8 +1,9 @@
 import { forwardRef } from "react";
 import Button from "./Button";
+import classes from "./NavbarModal.module.scss";
+import menu from "../../assets/close.svg";
 
 export type Ref = HTMLDialogElement;
-import classes from "./NavbarModal.module.scss";
 
 const NavbarModal = forwardRef<Ref>(function NavbarModal(props, ref) {
   return (
@@ -19,6 +20,9 @@ const NavbarModal = forwardRef<Ref>(function NavbarModal(props, ref) {
             github
           </Button>
         </section>
+        <button className={classes.closeModal}>
+          <img className={classes.menuIcon} src={menu} />
+        </button>
       </div>
     </dialog>
   );

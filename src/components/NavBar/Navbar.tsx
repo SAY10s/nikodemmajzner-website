@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import classes from "./Navbar.module.scss";
+import menu from "../../assets/menu.svg";
 
 interface Props {
   handleModalOpen: (event: React.MouseEvent<HTMLButtonElement>) => void;
@@ -21,8 +22,10 @@ export default function Navbar({ handleModalOpen }: Props) {
         <Button link="https://github.com/SAY10s" newPage={true}>
           github
         </Button>
-        <button onClick={handleModalOpen}>X</button>
       </section>
+      <button className={classes.openModal} onClick={handleModalOpen}>
+        <img className={classes.menuIcon} src={menu} />
+      </button>
     </nav>
   );
 }

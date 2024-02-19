@@ -16,12 +16,23 @@
   width: 100%;
   padding: 3rem 3rem;
 
-  // border-bottom: 3px solid #0f0201;
-
   .btnWrapper {
-    @media only screen and (max-width: 600px) {
-      background-color: lightblue;
+    @include mobile {
+      display: none;
+      background-color: azure;
     }
+  }
+  .openModal {
+    position: fixed;
+    right: 2rem;
+    top: 0.5rem;
+    @include desktop {
+      display: none;
+    }
+  }
+  .menuIcon {
+    width: 2rem;
+    height: 2rem;
   }
 
   .navLogo {

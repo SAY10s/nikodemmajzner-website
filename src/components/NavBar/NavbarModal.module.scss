@@ -17,6 +17,16 @@
   background-color: $primaryLight;
   border: none;
 
+  .closeModal {
+    position: fixed;
+    right: 2rem;
+    top: 0.5rem;
+  }
+  .menuIcon {
+    width: 2rem;
+    height: 2rem;
+  }
+
   .navLogo {
     font: 400 1.6rem/1.3rem "Roboto Mono", monospace;
     text-transform: uppercase;
