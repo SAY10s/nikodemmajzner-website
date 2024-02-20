@@ -9,10 +9,10 @@ export default function Homepage() {
       </div>
       <div className={classes.bottom}>
         <div className={classes.webdeveloper}>web developer</div>
-        <Link to={"kontakt"}>
-          <button className={classes.kontakt}>skontaktuj się</button>
-        </Link>
       </div>
+      <Link to={"kontakt"}>
+        <button className={classes.kontakt}>skontaktuj się</button>
+      </Link>
     </div>
   );
 }

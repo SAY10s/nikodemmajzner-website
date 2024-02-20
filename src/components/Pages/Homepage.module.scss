@@ -34,9 +34,14 @@
   .top {
     display: flex;
     align-items: end;
+    animation: fly-in-from-left 1s ease-out forwards;
     @include mobile {
       height: 52.5%;
     }
+  }
+  .bottom {
+    animation: fly-in-from-left 1s ease-out 0.1s forwards;
+    opacity: 0;
   }
   @include desktop {
     .top,
@@ -60,7 +65,7 @@
   }
   .kontakt {
     @include primaryButton;
-    position: absolute;
+    position: fixed;
     left: 4rem;
     bottom: 2rem;
 
@@ -69,5 +74,15 @@
       transform: translateX(-50%);
       bottom: 2rem;
     }
+  }
+}
+@keyframes fly-in-from-left {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
